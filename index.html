@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SIZHENSBLAG </title>
+	<link href="./stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="main flex column evenly container">
+        <div class="banner flex container">
+            <h1>SIZHENS</h1>
+            <div class="bar specificfont">
+                <div><p>☭</p></div>
+            </div>
+            <h1>THE SIZHENSBLAG</h1>
+        </div>
+        <div class="primarybox flex container">
+            <div class="leftcolumn flex column container">
+                <div class="navbar flex column evenly container">
+                    <!-- <div class="navbox flex column evenly container">
+                        <h4>
+                            navigational tab
+                        </h4>
+                    </div> -->
+                    <div class="navbox flex column evenly container">
+                        <h4>NAVIGATOR</h4>
+                        <a href="./branch/landingpage.html" target="portal">root</a>
+                        <a href="./branch/whoami.html" target="portal">whoami</a><br>
+                        <a href="./branch/man.html" target="portal">man sizhens</a><br>
+                        <a href="./branch/directory.html" target="portal">ls ~/sizhens</a><br>
+                        <a href="./branch/log.html" target="portal">cd ~/sizhens/bin/log</a><br>
+                        <a href="./branch/media.html" target="portal">cd ~/sizhens/media</a><br>
+                        <a href="https://system-wires.itch.io/" target="_blank" class="navlink">sudo touch art.html</a><br>
+                    </div>
+                    <div class="minibanner flex align container">
+                        <form action="https://system-wires.itch.io/by-god-you-must-become-a-communist" target="_blank">
+                            <input type="submit" value="BECOME"/>
+                        </form>
+                    </div>
+                    <div class="minibanner flex align container">
+                        <form action="./branch/media.html" target="portal">
+                            <input type="submit" value="LOCATE"/>
+                        </form>
+                    </div>
+                    <div class="stats flex column evenly container">
+                        <p>Congratulations! You are visitor #</p>
+                        <span id="hitcount"></span>
+                        <p>Navigate to</p><a href="https://tinyurl.com/noraonlyfans">tinyurl.com/noraonlyfans</a> <p>to redeem!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="centercolumn flex column container">
+                <iframe name="portal" width="100%" height="800px" src="./branch/landingpage.html"></iframe>
+                <div class="lowerhalf flex container">
+                    <div class="lowerhalf-2 container">
+                        <audio id="myAudio" src="./assets/burn.wav" preload="auto">
+                        </audio>
+                        <a onClick="togglePlay()"><button>CLICK HERE TO BLOW OUT YOUR SPEAKERS</button></a>
+                    </div>
+                    <div class="lowerhalf-1 container">
+                        <audio id="myAudio" src="./assets/burn.wav" preload="auto">
+                        </audio>
+                        <a onClick="togglePlay()"><button>CLICK HERE TO BLOW OUT YOUR SPEAKERS</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcolumn flex column container">
+                <div class="rightbox pfpbox column evenly container">
+                    <img clas="pfp" src="./assets/pfpsmall.png">
+                </div>
+                <div class="rightbox notpfp align container">
+                    <form action="https://www.amazon.com/Still-Fathers-Son-Nora-Hikari/dp/1951979702" target="_blank">
+                        <input type="submit" value="ACQUIRE"/>
+                    </form>
+                </div>
+                <div class="minibanner flex align container">
+                    <form action="https://www.mlreadinghub.org/study-materials/reading-list" target="_blank">
+                        <input type="submit" value="ACCELERATE"/>
+                    </form>
+                </div>
+                <div class="rightboxfinal column evenly container">
+                    <p>We are advocates of the abolition of war, we do not want war; but war can only be abolished through war, and in order to get rid of the gun it is necessary to take up the gun.</p>
+                    <h4>- Comrade Mao Zedong</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main footer flex column container">
+        <p>
+            A spectre haunting t3h interwebz for Late 20s years. Your worst nightmare and favorite fantasy. Internet's Cassandra and Helen of Troy. Keter-Class Tankie. Arbitrary arbitrator. Wielder of the Fickle Sickle. Marxist-Leninist Gender Inventor. Culture Warrior. I yield for PLA soldiers.
+        </p>
+        <p>
+            This website was barbarically "coded" by the Sizhen System in April of 2025. Copyright belongs to me, as do all things on this earth.
+        </p>
+    </div>
+
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var site_data = JSON.parse(this.responseText);
+            var num_arr = site_data.info.views.toString().split("");
+            var num_str = "";
+            for (i = 0; i < num_arr.length; i++) {
+              num_str += num_arr[i];
+              if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+            }
+            document.getElementById("hitcount").innerHTML = num_str;
+          }
+        };
+        xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=sizhens", true);
+        xhttp.send();
+      </script>
+
+<script>
+var myAudio = document.getElementById("myAudio");
+
+function togglePlay() {
+  return myAudio.paused ? myAudio.play() : myAudio.pause();
+};
+</script>
+
+</body>
