@@ -349,8 +349,10 @@ button {
 
 #statuscafe {
     padding: 0.5em;
-    background-color: azure;
-    border: 1px solid midnightblue;
+    background-color: rgba(0, 0, 0, 0.505);
+    font-family: "VT323";
+    color: lime;
+    /* border: 1px solid midnightblue; */
 }
 #statuscafe-username {
     margin-bottom: 0.5em;
