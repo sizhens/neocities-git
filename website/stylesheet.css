@@ -13,7 +13,11 @@
 }
 
 /* borders */
-.banner, .navbox, .minibanner, .stats, .rightboxfinal {   
+.banner,
+.navbox,
+.minibanner,
+.stats,
+.rightboxfinal {
     border: 4px;
     border-style: inset;
     border-color: red;
@@ -24,8 +28,8 @@
 
 .main.container {
     background-color: rgba(69, 0, 0, 0.911);
-    background-blend-mode:color-dodge;
-    animation: boxshadows 4s infinite
+    background-blend-mode: color-dodge;
+    animation: boxshadows 4s infinite;
 }
 body.index {
     background-image: url(./assets/bgnew.png);
@@ -33,7 +37,7 @@ body.index {
 }
 
 body.branch.container {
-    background-color:rgba(0, 42, 0, 0.6);
+    background-color: rgba(0, 42, 0, 0.6);
 }
 
 .container.branch {
@@ -55,13 +59,18 @@ body.branch.container {
 }
 
 /* text formatting */
-p, a, li {
+p,
+a,
+li {
     font-family: "VT323";
     font-size: 1.4em;
     color: lime;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "SYN-NOVA";
     color: lime;
 }
@@ -72,29 +81,53 @@ h1, h2, h3, h4 {
 }
 
 @keyframes shadows {
-    0% { text-shadow: #ff0000 0 0 10px; }
-    50% { text-shadow: rgb(0, 0, 0) 0 0 10px; }
-    75% { text-shadow: rgb(255, 0, 0) 0 0 10px;}
-    100% { text-shadow: #ff0000 0 0 10px; }
-   }
+    0% {
+        text-shadow: #ff0000 0 0 10px;
+    }
+    50% {
+        text-shadow: rgb(0, 0, 0) 0 0 10px;
+    }
+    75% {
+        text-shadow: rgb(255, 0, 0) 0 0 10px;
+    }
+    100% {
+        text-shadow: #ff0000 0 0 10px;
+    }
+}
 
 @keyframes boxshadows {
-    0% { box-shadow: #ff0000 0 0 100px; }
-    50% { box-shadow: rgb(255, 0, 195) 0 0 100px; }
-    75% { box-shadow: rgb(0, 26, 255) 0 0 100px;}
-    100% { box-shadow: #ff0000 0 0 100px; }
-   }
+    0% {
+        box-shadow: #ff0000 0 0 100px;
+    }
+    50% {
+        box-shadow: rgb(255, 0, 195) 0 0 100px;
+    }
+    75% {
+        box-shadow: rgb(0, 26, 255) 0 0 100px;
+    }
+    100% {
+        box-shadow: #ff0000 0 0 100px;
+    }
+}
 
 @keyframes pfpshadows {
-    0% { box-shadow: #ff0000 0 0 100px; }
-    50% { box-shadow: rgb(21, 0, 255) 0 0 100px; }
-    75% { box-shadow: rgb(255, 213, 0) 0 0 100px;}
-    100% { box-shadow: #ff0000 0 0 100px; }
-   }
+    0% {
+        box-shadow: #ff0000 0 0 100px;
+    }
+    50% {
+        box-shadow: rgb(21, 0, 255) 0 0 100px;
+    }
+    75% {
+        box-shadow: rgb(255, 213, 0) 0 0 100px;
+    }
+    100% {
+        box-shadow: #ff0000 0 0 100px;
+    }
+}
 
 h1.title {
     color: black;
-    animation: shadows 4s infinite
+    animation: shadows 4s infinite;
 }
 
 /* spacing and borders */
@@ -145,7 +178,7 @@ h1.title {
     margin-right: 10px;
 }
 
-.leftcolumn{
+.leftcolumn {
     flex-grow: 1;
     max-width: 15%;
 }
@@ -177,7 +210,9 @@ h1.title {
     padding: 2px;
 }
 
-.navbox, .minibanner, .rightbox {
+.navbox,
+.minibanner,
+.rightbox {
     margin-bottom: 10px;
 }
 
@@ -193,7 +228,7 @@ img {
 
 .pfpbox {
     max-width: 100%;
-    animation: pfpshadows 2s infinite
+    animation: pfpshadows 2s infinite;
 }
 
 .rightbox {
@@ -226,12 +261,11 @@ img {
 iframe {
     border-radius: 5px;
     border-color: red;
-    
 }
 
 span {
     font-family: "VT323";
-    font-size: 1.4em; 
+    font-size: 1.4em;
 }
 
 .minibanner {
@@ -257,13 +291,13 @@ a:hover {
     margin: 0 auto;
     opacity: 1;
     transition: all 1s ease-out;
-    display: block; 
-  }
-  
-  .hide {
+    display: block;
+}
+
+.hide {
     transition: all 1s ease-out;
     display: none;
-  }
+}
 
 /* .general.container {
     max-width: 100%;
@@ -274,7 +308,11 @@ a:hover {
     background-color: grey;
 } */
 
-h1:hover, h2:hover, h3:hover, h4:hover, .footer:hover {
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+.footer:hover {
     color: lime;
     background-color: black;
 }
@@ -307,4 +345,16 @@ button {
     width: 100%;
     height: 500px;
     margin: 10px;
+}
+
+#statuscafe {
+    padding: 0.5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+}
+#statuscafe-username {
+    margin-bottom: 0.5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
 }
