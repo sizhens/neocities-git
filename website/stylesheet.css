@@ -360,3 +360,7 @@ button {
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
 }
+
+video {
+    max-width: 100%;
+}
